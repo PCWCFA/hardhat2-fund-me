@@ -1,0 +1,125 @@
+yarn run v1.22.19
+$ /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/.bin/hardhat deploy --verbose --tags mocks
+2023-08-06T21:17:45.098Z hardhat:core:config Loading Hardhat config from /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/hardhat.config.js
+2023-08-06T21:17:45.538Z hardhat:wighawag:hardhat-deploy start...
+2023-08-06T21:17:45.550Z hardhat:core:global-dir Looking up Client Id at /home/pcwcfa/.local/share/hardhat-nodejs/analytics.json
+2023-08-06T21:17:45.552Z hardhat:core:global-dir Client Id found: 8078d762-56e2-4673-b9f3-bea3ee3a8e0d
+2023-08-06T21:17:45.599Z hardhat:core:analytics Sending hit for task
+2023-08-06T21:17:45.599Z hardhat:core:analytics Hit payload: {"client_id":"8078d762-56e2-4673-b9f3-bea3ee3a8e0d","user_id":"8078d762-56e2-4673-b9f3-bea3ee3a8e0d","user_properties":{"projectId":{"value":"hardhat-project"},"userType":{"value":"Developer"},"hardhatVersion":{"value":"Hardhat 2.17.0"},"operatingSystem":{"value":"linux"},"nodeVersion":{"value":"v18.16.1"}},"events":[{"name":"task","params":{"engagement_time_msec":"10000","session_id":"0.33314855361785245"}}]}
+2023-08-06T21:17:45.638Z hardhat:core:hre Creating HardhatRuntimeEnvironment
+2023-08-06T21:17:45.639Z hardhat:wighawag:hardhat-deploy constructing DeploymentsManager
+2023-08-06T21:17:45.640Z hardhat:wighawag:hardhat-deploy adding helpers
+2023-08-06T21:17:45.640Z hardhat:wighawag:hardhat-deploy ready
+2023-08-06T21:17:45.640Z hardhat:core:hre Running task deploy
+2023-08-06T21:17:45.641Z hardhat:core:hre Running task deploy:main
+2023-08-06T21:17:45.642Z hardhat:core:hre Running task compile
+2023-08-06T21:17:45.643Z hardhat:core:hre Running compile's super
+2023-08-06T21:17:45.643Z hardhat:core:hre Running task compile:get-compilation-tasks
+2023-08-06T21:17:45.643Z hardhat:core:hre Running task compile:solidity
+2023-08-06T21:17:45.644Z hardhat:core:hre Running task compile:solidity:get-source-paths
+2023-08-06T21:17:45.646Z hardhat:core:hre Running task compile:solidity:get-source-names
+2023-08-06T21:17:45.652Z hardhat:core:hre Running task compile:solidity:get-dependency-graph
+2023-08-06T21:17:45.654Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.655Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.655Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.656Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.659Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.659Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.659Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.660Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.660Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.702Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.705Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.706Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.706Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.708Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.712Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.713Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.713Z hardhat:core:hre Running task compile:solidity:transform-import-name
+2023-08-06T21:17:45.718Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.719Z hardhat:core:hre Running task compile:solidity:read-file
+2023-08-06T21:17:45.726Z hardhat:core:hre Running task compile:solidity:get-compilation-jobs
+2023-08-06T21:17:45.727Z hardhat:core:tasks:compile The dependency graph was divided in '3' connected components
+2023-08-06T21:17:45.727Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.728Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.730Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/FundMe.sol' will be compiled with version '0.8.8'
+2023-08-06T21:17:45.730Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/PriceConverter.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/FundMe.sol'
+2023-08-06T21:17:45.730Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/console.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/FundMe.sol'
+2023-08-06T21:17:45.730Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/FundMe.sol'
+2023-08-06T21:17:45.730Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/FundMe.sol'
+2023-08-06T21:17:45.730Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.730Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.731Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/Lock.sol' will be compiled with version '0.8.8'
+2023-08-06T21:17:45.731Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.731Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.732Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/test/MockV3Aggregator.sol' will be compiled with version '0.6.6'
+2023-08-06T21:17:45.732Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/test/MockV3Aggregator.sol'
+2023-08-06T21:17:45.732Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/test/MockV3Aggregator.sol'
+2023-08-06T21:17:45.732Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/test/MockV3Aggregator.sol'
+2023-08-06T21:17:45.732Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/test/MockV3Aggregator.sol'
+2023-08-06T21:17:45.732Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.732Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.733Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol' will be compiled with version '0.8.8'
+2023-08-06T21:17:45.733Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.733Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.734Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol' will be compiled with version '0.6.6'
+2023-08-06T21:17:45.734Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol'
+2023-08-06T21:17:45.734Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol'
+2023-08-06T21:17:45.734Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol'
+2023-08-06T21:17:45.734Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.734Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.735Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/PriceConverter.sol' will be compiled with version '0.8.8'
+2023-08-06T21:17:45.735Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/contracts/PriceConverter.sol'
+2023-08-06T21:17:45.735Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.735Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.735Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol' will be compiled with version '0.6.6'
+2023-08-06T21:17:45.736Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol'
+2023-08-06T21:17:45.736Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol' added as dependency of '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol'
+2023-08-06T21:17:45.736Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.736Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.737Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/console.sol' will be compiled with version '0.8.8'
+2023-08-06T21:17:45.737Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.737Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.737Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol' will be compiled with version '0.6.6'
+2023-08-06T21:17:45.738Z hardhat:core:hre Running task compile:solidity:get-compilation-job-for-file
+2023-08-06T21:17:45.738Z hardhat:core:hre Running compile:solidity:get-compilation-job-for-file's super
+2023-08-06T21:17:45.738Z hardhat:core:compilation-job File '/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol' will be compiled with version '0.6.6'
+2023-08-06T21:17:45.738Z hardhat:core:hre Running task compile:solidity:handle-compilation-jobs-failures
+2023-08-06T21:17:45.739Z hardhat:core:hre Running task compile:solidity:filter-compilation-jobs
+2023-08-06T21:17:45.744Z hardhat:core:tasks:compile '10' jobs were filtered out
+2023-08-06T21:17:45.744Z hardhat:core:hre Running task compile:solidity:merge-compilation-jobs
+2023-08-06T21:17:45.744Z hardhat:core:hre Running task compile:solidity:compile-jobs
+2023-08-06T21:17:45.744Z hardhat:core:hre Running compile:solidity:compile-jobs's super
+2023-08-06T21:17:45.745Z hardhat:core:tasks:compile No compilation jobs to compile
+2023-08-06T21:17:45.745Z hardhat:core:hre Running task compile:solidity:log:nothing-to-compile
+Nothing to compile
+2023-08-06T21:17:45.745Z hardhat:core:hre Running task typechain:generate-types
+2023-08-06T21:17:45.749Z hardhat:core:hre Running task compile:solidity:log:compilation-result
+2023-08-06T21:17:45.749Z hardhat:core:hre Running task compile:remove-obsolete-artifacts
+2023-08-06T21:17:45.767Z hardhat:core:hre Running task deploy:runDeploy
+2023-08-06T21:17:45.767Z hardhat:wighawag:hardhat-deploy runDeploy
+2023-08-06T21:17:45.784Z hardhat:core:hre Creating provider for network hardhat
+The Hardhat Network tracing engine could not be initialized. Run Hardhat with --verbose to learn more.
+2023-08-06T21:17:46.851Z hardhat:core:hardhat-network:node Hardhat Network tracing disabled: ContractsIdentifier failed to be initialized. Please report this to help us improve Hardhat.
+ TypeError: Cannot read properties of undefined (reading 'content')
+    at createSourcesModelFromAst (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/stack-traces/compiler-to-model.ts:90:41)
+    at createModelsAndDecodeBytecodes (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/stack-traces/compiler-to-model.ts:47:3)
+    at new HardhatNode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:420:57)
+    at Function.create (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:282:18)
+    at HardhatNetworkProvider._init (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:258:28)
+    at HardhatNetworkProvider._send (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:197:5)
+    at HardhatNetworkProvider.request (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:123:18)
+    at DeploymentsManager.getChainId (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/DeploymentsManager.ts:441:23)
+    at DeploymentsManager.loadDeployments (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/DeploymentsManager.ts:620:17)
+    at DeploymentsManager.runDeploy (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/DeploymentsManager.ts:1005:5)
+2023-08-06T21:17:46.930Z hardhat:wighawag:hardhat-deploy loading migrations
+2023-08-06T21:17:46.936Z hardhat:wighawag:hardhat-deploy deploy script folder parsed
+In 00-deploy-mocks.js
+2023-08-06T21:17:46.937Z hardhat:wighawag:hardhat-deploy tag collected
+2023-08-06T21:17:46.938Z hardhat:wighawag:hardhat-deploy dependencies collected
+2023-08-06T21:17:46.938Z hardhat:wighawag:hardhat-deploy deploy scripts complete
+2023-08-06T21:17:47.169Z hardhat:sentry:subprocess starting subprocess
+2023-08-06T21:17:47.187Z hardhat:sentry:subprocess sentry event was sent
+2023-08-06T21:17:47.298Z hardhat:core:analytics Hit for task sent successfully
+2023-08-06T21:17:47.298Z hardhat:core:cli Killing Hardhat after successfully running task deploy
+Done in 2.56s.

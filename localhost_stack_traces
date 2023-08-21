@@ -1,0 +1,73 @@
+yarn run v1.22.19
+$ /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/.bin/hardhat --show-stack-traces node
+The Hardhat Network tracing engine could not be initialized. Run Hardhat with --verbose to learn more.
+Nothing to compile
+In 00-deploy-mocks.js
+--------------
+In 00-deploy-mocks.js
+-------------------
+developmentChains: hardhat,localhost
+Local network detected! Deploying mocks.
+deploying "MockV3Aggregator" (tx: 0x3d732abdeda8235691578f5eae48ec57c18e6860c18196ab7b211ca8f74dce2b)...: deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3 with 569759 gas
+Mocks deployed.
+---------------------------------------------------------
+Error HH604: Error running JSON-RPC server: ERROR processing /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/deploy/01-deploy-fund-me.js:
+Error: invalid address (argument="address", value=undefined, code=INVALID_ARGUMENT, version=address/5.7.0) (argument="priceFeedAddress", value=undefined, code=INVALID_ARGUMENT, version=abi/5.7.0)
+    at Logger.makeError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+    at Logger.throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+    at Logger.throwArgumentError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:285:21)
+    at AddressCoder.Coder._throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/abstract-coder.ts:68:16)
+    at AddressCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/address.ts:22:18)
+    at /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:71:19
+    at Array.forEach (<anonymous>)
+    at pack (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:54:12)
+    at TupleCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/tuple.ts:54:20)
+    at AbiCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/abi-coder.ts:111:15)
+
+HardhatError: HH604: Error running JSON-RPC server: ERROR processing /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/deploy/01-deploy-fund-me.js:
+Error: invalid address (argument="address", value=undefined, code=INVALID_ARGUMENT, version=address/5.7.0) (argument="priceFeedAddress", value=undefined, code=INVALID_ARGUMENT, version=abi/5.7.0)
+    at Logger.makeError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+    at Logger.throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+    at Logger.throwArgumentError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:285:21)
+    at AddressCoder.Coder._throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/abstract-coder.ts:68:16)
+    at AddressCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/address.ts:22:18)
+    at /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:71:19
+    at Array.forEach (<anonymous>)
+    at pack (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:54:12)
+    at TupleCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/tuple.ts:54:20)
+    at AbiCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/abi-coder.ts:111:15)
+    at SimpleTaskDefinition.action (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/builtin-tasks/node.ts:368:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runNextTicks (node:internal/process/task_queues:64:3)
+    at listOnTimeout (node:internal/timers:538:9)
+    at processTimers (node:internal/timers:512:7)
+    at Environment._runTaskDefinition (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/core/runtime-environment.ts:333:14)
+    at OverriddenTaskDefinition._action (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/index.ts:748:5)
+    at Environment._runTaskDefinition (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/core/runtime-environment.ts:333:14)
+    at Environment.run (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/core/runtime-environment.ts:166:14)
+    at main (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/cli/cli.ts:280:7)
+
+    Caused by: Error: ERROR processing /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/deploy/01-deploy-fund-me.js:
+    Error: invalid address (argument="address", value=undefined, code=INVALID_ARGUMENT, version=address/5.7.0) (argument="priceFeedAddress", value=undefined, code=INVALID_ARGUMENT, version=abi/5.7.0)
+        at Logger.makeError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+        at Logger.throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+        at Logger.throwArgumentError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/logger/src.ts/index.ts:285:21)
+        at AddressCoder.Coder._throwError (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/abstract-coder.ts:68:16)
+        at AddressCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/address.ts:22:18)
+        at /home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:71:19
+        at Array.forEach (<anonymous>)
+        at pack (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/array.ts:54:12)
+        at TupleCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/coders/tuple.ts:54:20)
+        at AbiCoder.encode (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/@ethersproject/abi/src.ts/abi-coder.ts:111:15)
+        at DeploymentsManager.executeDeployScripts (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/DeploymentsManager.ts:1229:19)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at runNextTicks (node:internal/process/task_queues:64:3)
+        at listOnTimeout (node:internal/timers:538:9)
+        at processTimers (node:internal/timers:512:7)
+        at DeploymentsManager.runDeploy (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/DeploymentsManager.ts:1059:5)
+        at SimpleTaskDefinition.action (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/index.ts:438:5)
+        at Environment._runTaskDefinition (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/core/runtime-environment.ts:333:14)
+        at Environment.run (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat/src/internal/core/runtime-environment.ts:166:14)
+        at SimpleTaskDefinition.action (/home/pcwcfa/fcc/blockchain/hardhat2-fund-me-fcc/node_modules/hardhat-deploy/src/index.ts:584:32)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
